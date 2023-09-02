@@ -25,7 +25,7 @@
    2. Server Port 9600 TCP & UDP
 3. Extract contents into a folder
 4. Double click on 'AssettoServer.exe' to run it.
-5. Make sure you and your friends have all the mods (Cars & Track) required.
+5. Make sure you and your friends have all the mods (Cars & Track, CSP (Min Build 2144, Version 0.1.79), etc) required.
 6. Enjoy the No Hesi Server with your friends.
 
 ## Trouble Shooting Steps
