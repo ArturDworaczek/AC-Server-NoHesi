@@ -141,7 +141,7 @@ AiParams:
   # Maximum AI car target count for AI slot overbooking. This is not an absolute maximum and might be slightly higher
   MaxAiTargetCount: 300
   # Number of AI cars per player the server will try to keep
-  AiPerPlayerTargetCount: 25
+  AiPerPlayerTargetCount: 50
   # AI spline height offset. Use this if the AI spline is too close to the ground
   SplineHeightOffsetMeters: 0
   # AI cornering speed factor. Lower = AI cars will drive slower around corners.
