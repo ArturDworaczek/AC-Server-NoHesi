@@ -52,9 +52,6 @@ Follow these steps if you do not have a DLC car:
 1. Go into '/steamapps/common/assettocorsa/content/cars/[insert missing car name here]'.
 2. Replace the 'collider.kn5' file with a 'collider.kn5' file from a non DLC car, it does not matter what car it is.
 
-## Mods List
-1. TBC
-
 ## Modifying The Server
 Follow these steps to add a modded car:
 1. Find a car you want to add inside your game content folder e.g. '/steamapps/common/assettocorsa/content/cars/[insert missing car name here]'.
@@ -83,5 +80,43 @@ Follow these steps to remove a modded car (any type: AI, Personal use, etc, does
 2. Find line 22 (CARS=[Insert Cars Here]).
 3. Remove the name of the car from the string of text & save the file.
 4. Open up 'entry_list.ini' inside the 'cfg' folder of your server.
-5. Remove any entries that contain the model of the car you just deleted & save.
+6. Remove any entries that contain the model of the car you just deleted & save.
+
+## Mods List
+Modded cars for AI traffic:
+1. traffic_f&f_truck
+2. traffic_levorg_lm
+3. traffic_pajero_lm
+4. traffic_mnba_fer_458
+5. traffic_alfa_159
+6. traffic_alfa_mito_v2
+7. traffic_range_rover_ss_v2
+8. traffic_toyota_rav4
+9. traffic_cadillac_escalade
+10. traffic_chevy_imp
+11. traffic_dodge_challenger_srt_v2
+12. traffic_crown_vic;traffic_nissan_leaf
+13. traffic_isuzu_npr
+14. traffic_isuzu_tanker
+15. traffic_isuzu_haulerb
+16. traffic_isuzu_hauler
+17. traffic_volvo_v70jp
+
+Modded cars for players:
+1. tgn_bmw_m140i_2019_prvvy_edition
+2. M2_Competition_RAID_Tuned
+3. tgn_bmw_m235i_tuned
+4. f_bmw_f90_m5_2018_cspn
+5. ks_audi_r8_v10_performance_2021
+6. audi_rs3_tuned_2020_tgn
+7. mlgz_audi_rs3_sportback
+8. ap_audi_rs7
+9. bk_2015_audi_rs6_avant_performance
+10. bmw_e92_335i_letvi_edition
+11. gtd_bugatti_chiron_sport_sr
+12. tgn_x_prvvy_bmw_m340i_g20
+13. Nissan_r34_hellspec
+14. ks_lamborghini_huracan_ugr_r
+15. hm_toyota_supra_mkv_2jz
+16. strider_supra_rz
 
