@@ -1,5 +1,5 @@
 # Assetto Corsa No Hesi - Server Files
- Server files for Assetto Corsa No Hesi Server - Dense Traffic. Posted here so you do not have to go through the struggle of configurating it yourself.
+ Server files for Assetto Corsa No Hesi Server - Dense Traffic. Posted here so you do not have to go through the struggle of configurating it yourself. Some modded cars may contain DLC content.
 
 ## Install these frameworks (Windows)
 [.NET SDK 7.0.100](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-7.0.100-windows-x64-installer)
@@ -40,11 +40,48 @@ Follow these steps if 'AssettoServer.exe' does not open:
    2. .Net Runtime Optimization Service
 8. Press 'OK' at the bottom of the window.
 9. Preview logs and see what is going wrong.
-10. Use Google B)
+10. Use Google if you do not understand them B)
 
 Follow these steps for any other issues:
 1. Go into the 'logs' files.
 2. Open the most recent log and scroll down to the bottom.
 3. Look for any errors that have appeared.
-4. Google them B)
- 
+4. Google them if you do not understand them B)
+
+Follow these steps if you do not have a DLC car:
+1. Go into '/steamapps/common/assettocorsa/content/cars/[insert missing car name here]'.
+2. Replace the 'collider.kn5' file with a 'collider.kn5' file from a non DLC car, it does not matter what car it is.
+
+## Mods List
+1. TBC
+
+## Modifying The Server
+Follow these steps to add a modded car:
+1. Find a car you want to add inside your game content folder e.g. '/steamapps/common/assettocorsa/content/cars/[insert missing car name here]'.
+2. Copy it into the cars folder inside your content folder within the server files e.g. 'ServerNoHesi\content\cars'.
+3. Copy the folder name of the car.
+4. Open up 'server_cfg.ini' inside the 'cfg' folder of your server.
+5. Find line 22 (CARS=[Insert Cars Here]).
+6. Add a semi-colon (;) to the end of the string, then insert the folder name of the modded car afterwards & save the file.
+7. Open up 'entry_list.ini' inside the 'cfg' folder of your server.
+8. Add any amount of entries for the modded car.
+   e.g. <br /> `[CAR_[Insert Number Here (Make sure you do not have the same number used already anywhere inside the file)]]` <br />
+         `MODEL=[Folder Name of the car]` <br />
+         `SKIN=generated/ADAn` <br />
+         `SPECTATOR_MODE=0` <br />
+         `DRIVERNAME=` <br />
+         `TEAM=` <br />
+         `GUID=` <br />
+         `BALLAST=0` <br />
+         `RESTRICTOR=0` <br />
+9. If you would like it to be a:
+    1. Car you or your friends would like to drive press 'enter' to create a new line after `RESTRICTOR=0` and type in `AI=none`.
+    2. Car for AI traffic press 'enter' to create a new line after `RESTRICTOR=0` and type in `AI=fixed`. 
+
+Follow these steps to remove a modded car (any type: AI, Personal use, etc, does not matter):
+1. Open up 'server_cfg.ini' inside the 'cfg' folder of your server.
+2. Find line 22 (CARS=[Insert Cars Here]).
+3. Remove the name of the car from the string of text & save the file.
+4. Open up 'entry_list.ini' inside the 'cfg' folder of your server.
+5. Remove any entries that contain the model of the car you just deleted & save.
+
